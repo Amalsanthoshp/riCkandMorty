@@ -21,10 +21,10 @@ class Nav extends React.Component {
         return (
             <div className="ui secondary  menu" style={styles}>
 
-                <a className="item" style={item}>
+                <a className="item" style={item} onClick={this.props.clickhandler1}>
                     {this.props.item1}
                 </a>
-                <a className="item" style={item}>
+                <a className="item" style={item} onClick={this.props.clickhandler}>
                     {this.props.item2}
                 </a>
                 <a className="item" style={item}>

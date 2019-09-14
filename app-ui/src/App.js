@@ -3,6 +3,7 @@ import './App.css';
 import Card from './Components/Card'
 import Banner from './Components/Banner'
 import Nav from './Components/Nav'
+import Character from './Components/Character'
 
 class App extends React.Component {
 
@@ -12,11 +13,15 @@ class App extends React.Component {
       character:{},
       isLoading:false,
       input:'',
-      isDataSet:false
+      isDataSet:false,
+      isHome:true,
+      isCharacter:false
     }
     this.handleChange =this.handleChange.bind(this)
     this.handleClick =this.handleClick.bind(this)
     this.fetchDetails =this.fetchDetails.bind(this)
+    this.onClick1 =this.onClick1.bind(this)
+    this.onClick2 =this.onClick2.bind(this)
   }
 
   componentDidMount() {
@@ -57,6 +62,18 @@ class App extends React.Component {
   handleClick() {
     this.fetchDetails(this.state.input)
   }
+  onClick1() {
+    this.setState({
+      isHome: false,
+      isCharacter:true
+  });
+  }
+  onClick2() {
+    this.setState({
+      isHome: true,
+      isCharacter:false,
+  });
+  }
   
 
   render() {
@@ -70,36 +87,42 @@ class App extends React.Component {
      origin={this.state.character.origin}
       />
     :'No results for you try to search with numbers...'
-    let loading = 
+    let loading =
       <div className="ui loading segment" style={{marginTop:'15rem'}}>
       </div>
+    let Char = this.state.isCharacter && <Character/>
+
+    let home = this.state.isHome &&
+    <div>
+    <Banner/>
+    <div className="ui raised segment">
+    <div className="ui two column grid">
+      <div className="column">
+      <form className="ui form">
+      <div className="field">
+        <label>Search Characters</label>
+        <input type="text" name="input" placeholder="Name" onChange={this.handleChange} required/>
+      </div>
+      <button className="ui button" type="button" onClick={this.handleClick}>Submit</button>
+      </form>
+      </div>
+      <div className="column">
+      {this.state.isLoading  ? loading:card }
+      </div>
+      </div>
+     </div> 
+  </div>
     return (
       <div>
-      <Nav item1='Home' item2='Characters' item3='About'/>
+      <Nav item1='Home' clickhandler1={this.onClick2} item2='Characters' clickhandler={this.onClick1} item3='About'/>
       <div className='ui vertical segment'>
           <img src ='https://static3.srcdn.com/wordpress/wp-content/uploads/2018/04/Rick-and-Morty-Season-4-Logo.jpg' alt='image' style={{width:'100%',height:'50%'}}></img>
       </div>
-      <Banner/>
-      <div className="ui raised segment">
-        <div className="ui two column grid">
-          <div className="column">
-          <form className="ui form">
-          <div className="field">
-            <label>Search Characters</label>
-            <input type="text" name="input" placeholder="Name" onChange={this.handleChange} required/>
-          </div>
-          <button className="ui button" type="button" onClick={this.handleClick}>Submit</button>
-          </form>
-          </div>
-          <div className="column">
-          {this.state.isLoading  ? loading:card }
-          </div>
-        </div>
-      </div>
+      {home}
+      {Char}
       </div>
     )
   }
-
 }
 
 export default App;
