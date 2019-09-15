@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from './Card'
 
 
 class Character extends React.Component {
@@ -6,15 +7,14 @@ class Character extends React.Component {
         super()
         this.state ={
             isDataset:false,
-            character:{}
+            character:{},
+            isloading:true
         }
         this.fetchDetails =this.fetchDetails.bind(this)
     }
     fetchDetails(inp) {
-        if (inp!== ''){
     
-        const url = "https://rickandmortyapi.com/api/character/" + inp
-    
+        const url = "https://rickandmortyapi.com/api/character/"
     
         fetch(url).then(res => {
           if(res.status === 200) {
@@ -25,46 +25,42 @@ class Character extends React.Component {
           if(data!==null)  {
               this.setState({
                   character:data,
-                  isDataSet: true
-              });
-          } else {
-              this.setState({
-                  isDataSet: false
+                  isDataSet: true,
+                  isloading:false
               });
           }
         });
-     }}
+
+     }
     
     componentDidMount() {
-        
         this.fetchDetails(1)
+
     }
     
     render(){
-        const styles = {
-            flex:'auto',
-            margin:'auto',
-            shadowColor: '#000000',
-             shadowOffset: {
-             width: 0,
-             height: 3},
-             shadowRadius: 5,
-             shadowOpacity: 1.0,
-             
-         }
+
+        var comp=[];
+        if (this.state.character.results == null){
+
+        }
+        else{
+            for(var i=0;i<12;i++){
+              comp.push(<Card key={i}
+                  img={this.state.character.results[i].image} 
+                  name={this.state.character.results[i].name} 
+                  gender={this.state.character.results[i].gender} 
+                  status= {this.state.character.results[i].status}
+                  species={this.state.character.results[i].species}
+                  origin={this.state.character.results[i].origin}
+                  />)
+            }
+        }
+        let cards =  this.state.isloading ? 'Loading!!' :  comp
         return(
-    <div style={{marginTop:'20px'}}>
-        <div className="ui red card vertical " style={styles}>
-            <div className="image"><img src={this.state.character.image} alt='photo'/></div>
-                <div className="content">
-                  <div className="header"> Name : {this.state.character.name}</div><br></br>
-                    <div className="summary">Status : {this.state.character.status}</div>
-                   <div className="summary">Gender : {this.state.character.gender}</div>
-                <div className="summary">Species: {this.state.character.species}</div>
-             </div>
-        </div>
-    </div>
-        )
+    <div className='ui raised segment row' style={{display:'right'}}>
+      {cards} 
+    </div>)
     }
 }
 

@@ -7,7 +7,8 @@ class Card extends React.Component {
     render() {
         const styles = {
            flex:'auto',
-           margin:'auto',
+           float:'auto',
+           marginRight:'2rem',
            shadowColor: '#000000',
             shadowOffset: {
             width: 0,
@@ -17,7 +18,7 @@ class Card extends React.Component {
             
         }
         return (
-            <div className="ui red card vertical " style={styles}>
+            <div className="ui red card vertical column " style={styles}>
                 <div className="image"><img src={this.props.img} alt='photo'/></div>
                 <div className="content">
                     <div className="header"> Name : {this.props.name}</div><br></br>
