@@ -115,7 +115,7 @@ class App extends React.Component {
     return (
       <div>
       <Nav item1='Home' clickhandler1={this.onClick2} item2='Characters' clickhandler={this.onClick1} item3='About'/>
-      <div className='ui vertical segment'>
+      <div className='ui vertical segment' style={{background:'#dbdbaf8a'}}>
           <img src ='https://static3.srcdn.com/wordpress/wp-content/uploads/2018/04/Rick-and-Morty-Season-4-Logo.jpg' alt='image' style={{width:'100%',height:'50%'}}></img>
       </div>
       {home}
