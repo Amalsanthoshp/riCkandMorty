@@ -56,14 +56,16 @@ class Character extends React.Component {
                   />)
             }
         }
-        let cards =  this.state.isloading ? <div className="ui loader"></div> :  comp
+        let cards =  this.state.isloading ? <div className="ui active inverted dimmer" style={{marginTop:'4rem'}}>
+    <div className="ui text loader">Loading</div>
+  </div> :  comp
         return(
     <>
     <h2 className="ui center aligned icon header">
       <i className="circular users icon"></i>
       Characters
     </h2> 
-    <div className='ui raised segment row' style={{display:'right',background:'#dbdbaf8a',marginTop:'0rem'}}>
+    <div className='ui vertical segment row' style={{display:'right',marginTop:'0rem'}}>
     {cards} 
     </div>
     </>)

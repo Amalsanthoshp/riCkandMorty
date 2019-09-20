@@ -101,6 +101,7 @@ class App extends React.Component {
       <form className="ui form">
       <div className="field">
         <label>Search Characters</label>
+        <p> You can search your Rick and Morty characters using numbers ;)</p>
         <input type="text" name="input" placeholder="Name" onChange={this.handleChange} required/>
       </div>
       <button className="ui button" type="button" onClick={this.handleClick}>Submit</button>
