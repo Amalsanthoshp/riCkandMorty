@@ -1,0 +1,23 @@
+.active {
+  background:#545454;
+  color:white!important;
+  padding:6px;
+  border-radius: 2px;
+
+}
+.item a {
+	text-decoration: none!important;
+	color:black;
+}
+.menu {
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)!important;
+
+}
+
+#nav {
+	position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: none!important;
+}
+

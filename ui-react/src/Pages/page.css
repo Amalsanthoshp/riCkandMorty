@@ -1,0 +1,15 @@
+#about-2 i {
+	font-size: 2rem;
+	margin:.5rem;
+	margin-top:0!important;
+}
+
+#about-2 i:hover {
+	color:black!important;
+}
+
+#about a {
+
+	font-size: 1rem;
+}
+
