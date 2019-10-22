@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import {
-  Route,
+  Route,Switch,
   NavLink,
-  HashRouter
+  HashRouter,BrowserRouter as Router
 } from "react-router-dom";
 import Home from "./Pages/Home";
 import Character from './Pages/Character';
@@ -15,11 +15,11 @@ class Main extends Component {
 	render() {
 
 		return(
-    <HashRouter>
+    <Router>
   		<div>
         <div className="ui four item menu" id ="nav">
           <a className="item"><NavLink exact to="/home">Home</NavLink></a>
-          <a className="item"><NavLink exact to="/character">Character</NavLink></a>
+          <a className="item"><NavLink exact to="/character">Characters</NavLink></a>
           <a className="item"><NavLink exact to="/search">Search</NavLink></a>
           <a className="item"><NavLink exact to="/about">About</NavLink></a>
         </div>
@@ -33,7 +33,7 @@ class Main extends Component {
               <Route path="/about" component={About}/> 
             </div>
       </div>
-    </HashRouter>
+    </Router>
 		);
 	}
 }

@@ -68,7 +68,7 @@ class Search extends React.Component {
 
     return (
     	<>
- 		<div className="ui raised segment">
+ 		<div className="ui raised segment" style={{marginTop:'2rem'}}>
 		    <div className="ui two column grid">
 		      <div className="column">
 		      <form className="ui form">
