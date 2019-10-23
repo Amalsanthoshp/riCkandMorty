@@ -91,9 +91,9 @@ class Home extends React.Component {
               <p> Additionally, Harmon had expressed his wish for the upcoming fourth season to consist of more than ten episodes.</p>
               <p> In May 2018, after prolonged contract negotiations, Adult Swim announced a long-term deal with the creators, ordering 70 new episodes over an unspecified number of seasons.</p>
           </div>
-            <p> In a June 2018 interview with Polygon, Justin Roiland was confident that this big renewal deal will allow the creators to minimize the gaps between seasons, as they will be able to schedule their time around the show and "keep the machine going." In May 2019, at WarnerMedia's 2019 Upfronts presentation, the fourth season of Rick and Morty was announced to debut in November 2019. In a July 2019 interview with Entertainment Weekly, Roiland confirmed that the fourth season will consist of ten episodes.</p>
         </div>
-      </div> 
+      </div>
+        <p> In a June 2018 interview with Polygon, Justin Roiland was confident that this big renewal deal will allow the creators to minimize the gaps between seasons, as they will be able to schedule their time around the show and "keep the machine going." In May 2019, at WarnerMedia's 2019 Upfronts presentation, the fourth season of Rick and Morty was announced to debut in November 2019. In a July 2019 interview with Entertainment Weekly, Roiland confirmed that the fourth season will consist of ten episodes.</p> 
       </div>    
 		 </>
       )
