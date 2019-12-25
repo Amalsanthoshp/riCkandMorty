@@ -1,10 +1,11 @@
 {
-  "homepage":"https://amal-san.github.io/RickandMortysearch/",
+  "homepage": "https://amal-san.github.io/RickandMortysearch/",
   "name": "ui-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "antd": "^3.24.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-router": "^5.1.2",
@@ -13,13 +14,12 @@
     "shards-react": "^1.0.3"
   },
   "scripts": {
-
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
