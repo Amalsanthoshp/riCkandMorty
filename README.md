@@ -9,6 +9,6 @@ Rick and Morty is an American adult animated science fiction sitcom created by J
 
 Look at the cool characters from Rick and Morty.
 
-   ![Rick and Morty Main png](https://github.com/amal-san/riCkandMorty/blob/master/rickandmortychar.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  ![Rick and Morty Main png](https://github.com/amal-san/riCkandMorty/blob/master/rickandmortychar.png)
 
 
