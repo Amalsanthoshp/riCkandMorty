@@ -13,4 +13,4 @@ Now you can search Rick and Morty characters with numbers :relieved: .
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;  ![Rick and Morty Char png](https://github.com/amal-san/cronenberg-137/blob/master/rickandmortysearch.png)
 
 
-`Made with React :heart:`
+`Made with React` :heart:
