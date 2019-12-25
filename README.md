@@ -7,7 +7,8 @@ Rick and Morty is an American adult animated science fiction sitcom created by J
 
 ## Characters
 
-You can search your favorite characters with numbers.
-![Rick and Morty Main png](https://github.com/amal-san/riCkandMorty/blob/master/rickandmortychar.png)
+Look at the cool characters from Rick and Morty.
+
+   ![Rick and Morty Main png](https://github.com/amal-san/riCkandMorty/blob/master/rickandmortychar.png)
 
 
