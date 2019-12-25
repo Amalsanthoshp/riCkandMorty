@@ -9,4 +9,4 @@ Rick and Morty is an American adult animated science fiction sitcom created by J
 
 Now you can search Rick and Morty characters with numbers :relieved: .
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  ![Rick and Morty Char png](https://github.com/amal-san/riCkandMorty/blob/master/rickandmortysearch.png)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;  ![Rick and Morty Char png](https://github.com/amal-san/riCkandMorty/blob/master/rickandmortysearch.png)
