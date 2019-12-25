@@ -6,7 +6,7 @@ Rick and Morty is an American adult animated science fiction sitcom created by J
 ![Rick and Morty Main png](https://github.com/amal-san/cronenberg-137/blob/master/rickandmorty.png)
 
 
-## Character Search 
+## Character Search  :smile:
 
 Now you can search Rick and Morty characters with numbers :relieved: .
 
