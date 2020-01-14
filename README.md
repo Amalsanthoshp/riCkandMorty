@@ -8,7 +8,7 @@ Rick and Morty is an American adult animated science fiction sitcom created by J
 
 <hr>
 
-## Character Search  :smile:
+## Character Search  :thinking:
 
 Now you can search Rick and Morty characters with numbers :relieved: .
 
