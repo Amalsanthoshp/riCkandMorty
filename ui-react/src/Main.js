@@ -40,7 +40,7 @@ class Main extends Component {
            <div>
               <img  className="ui image" src ='https://static3.srcdn.com/wordpress/wp-content/uploads/2018/04/Rick-and-Morty-Season-4-Logo.jpg' alt='image' style={{width:'100%',height:'100%'}}></img>
            </div>
-              <Route exact path="/cronenberg-137" component={Home}/>
+              <Route path="/cronenberg-137" component={Home}/>
               <Route path="/character" component={Character}/>
               <Route path='/search' component={Search}/>
               <Route path="/about" component={About}/> 
