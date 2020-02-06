@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cronenberg-137/static/css/main.e53bde79.chunk.css",
-    "main.js": "/cronenberg-137/static/js/main.8fd90b9f.chunk.js",
-    "main.js.map": "/cronenberg-137/static/js/main.8fd90b9f.chunk.js.map",
+    "main.js": "/cronenberg-137/static/js/main.97ae70a3.chunk.js",
+    "main.js.map": "/cronenberg-137/static/js/main.97ae70a3.chunk.js.map",
     "runtime-main.js": "/cronenberg-137/static/js/runtime-main.6929fa44.js",
     "runtime-main.js.map": "/cronenberg-137/static/js/runtime-main.6929fa44.js.map",
     "static/js/2.d4b1b296.chunk.js": "/cronenberg-137/static/js/2.d4b1b296.chunk.js",
     "static/js/2.d4b1b296.chunk.js.map": "/cronenberg-137/static/js/2.d4b1b296.chunk.js.map",
     "index.html": "/cronenberg-137/index.html",
-    "precache-manifest.8673fb54c1ca079ef5ac8adcc76fa6f9.js": "/cronenberg-137/precache-manifest.8673fb54c1ca079ef5ac8adcc76fa6f9.js",
+    "precache-manifest.1fc82d6e2332377875b3db439b0f6e0b.js": "/cronenberg-137/precache-manifest.1fc82d6e2332377875b3db439b0f6e0b.js",
     "service-worker.js": "/cronenberg-137/service-worker.js",
     "static/css/main.e53bde79.chunk.css.map": "/cronenberg-137/static/css/main.e53bde79.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.6929fa44.js",
     "static/js/2.d4b1b296.chunk.js",
     "static/css/main.e53bde79.chunk.css",
-    "static/js/main.8fd90b9f.chunk.js"
+    "static/js/main.97ae70a3.chunk.js"
   ]
 }
