@@ -25,7 +25,7 @@ class Main extends Component {
 
           </div>
           <a className="item">
-            <NavLink exact to="/cronenberg-137/">Home</NavLink>
+            <NavLink exact to="/cronenberg-137/home">Home</NavLink>
           </a>
           <a className="item">
             <NavLink exact to="/cronenberg-137/character">Characters</NavLink>
@@ -40,7 +40,7 @@ class Main extends Component {
            <div>
               <img  className="ui image" src ='https://static3.srcdn.com/wordpress/wp-content/uploads/2018/04/Rick-and-Morty-Season-4-Logo.jpg' alt='image' style={{width:'100%',height:'100%'}}></img>
            </div>
-              <Route path="/cronenberg-137/" component={Home}/>
+              <Route path="/cronenberg-137/home" component={Home}/>
               <Route path="/cronenberg-137/character" component={Character}/>
               <Route path='/cronenberg-137/search' component={Search}/>
               <Route path="/cronenberg-137/about" component={About}/> 
