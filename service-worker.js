@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cronenberg-137/precache-manifest.38d1d395ea3f40b9b906455c875059c9.js"
+  "/cronenberg-137/precache-manifest.bf9de80e7819141677882174422cf72a.js"
 );
 
 self.addEventListener('message', (event) => {
