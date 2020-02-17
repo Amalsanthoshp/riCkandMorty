@@ -6,17 +6,11 @@ class Card extends React.Component {
 
     render() {
         const styles = {
-           flex:'auto',
-           float:'auto',
-           marginRight:'2rem',
-           shadowColor: '#000000',
-            shadowOffset: {
-            width: 0,
-            height: 3},
-            shadowRadius: 5,
-            shadowOpacity: 1.0,
+            flex:'auto',
+            margin:'1em',
             
         }
+        let style = this.props.noflex == 'true' ? "margin:'1em'": styles
         return (
             <div className="ui black card vertical column " style={styles}>
                 <div className="image"><img src={this.props.img} alt='photo'/></div>
