@@ -21,7 +21,7 @@ class Main extends Component {
           <div className="container">
           <div className="ui pointing menu" id ="nav">
           <div className="header item">
-          <img className="ui avatar image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.hellogiggles.com%2Fuploads%2F2017%2F04%2F02040635%2Frick-and-morty.jpg&f=1&nofb=1"/>
+          <img className="ui avatar image" src="https://images.hellogiggles.com/uploads/2017/04/02040635/rick-and-morty.jpg"/>
             Rick and Morty
 
           </div>
