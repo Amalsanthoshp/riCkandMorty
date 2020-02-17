@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import {
   Route,Switch,
   NavLink,IndexRoute,
-  HashRouter,BrowserRouter as Router
+  BrowserRouter as Router
 } from "react-router-dom";
+import { HashRouter } from 'react-router-dom'
 import Home from "./Pages/Home";
 import Character from './Pages/Character';
 import About from './Pages/About';
@@ -15,38 +16,38 @@ class Main extends Component {
 	render() {
 
 		return(
-    <Router>
+    <HashRouter>
   		<div>
           <div className="container">
           <div className="ui pointing menu" id ="nav">
           <div className="header item">
-          <img className="ui avatar image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fscreenrant.com%2Fwp-content%2Fuploads%2F2017%2F03%2FRickAndMortyFeature.jpg&f=1&nofb=1"/>
+          <img className="ui avatar image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.hellogiggles.com%2Fuploads%2F2017%2F04%2F02040635%2Frick-and-morty.jpg&f=1&nofb=1"/>
             Rick and Morty
 
           </div>
           <a className="item">
-            <NavLink exact to="/cronenberg-137/home">Home</NavLink>
+            <NavLink exact to="/home">Home</NavLink>  
           </a>
           <a className="item">
-            <NavLink exact to="/cronenberg-137/character">Characters</NavLink>
+            <NavLink exact to="/character/">Characters</NavLink>
           </a>
           <a className="item">
-            <NavLink exact to="/cronenberg-137/search">Search</NavLink>
+            <NavLink exact to="/search/">Search</NavLink>
           </a>
           <a className="item">
-            <NavLink exact to="/cronenberg-137/about">About</NavLink>
+            <NavLink exact to="/about/">About</NavLink>
           </a>
         </div>
            <div>
               <img  className="ui image" src ='https://static3.srcdn.com/wordpress/wp-content/uploads/2018/04/Rick-and-Morty-Season-4-Logo.jpg' alt='image' style={{width:'100%',height:'100%'}}></img>
            </div>
-              <Route path="/cronenberg-137/home" component={Home}/>
-              <Route path="/cronenberg-137/character" component={Character}/>
-              <Route path='/cronenberg-137/search' component={Search}/>
-              <Route path="/cronenberg-137/about" component={About}/> 
+              <Route path="/home" component={Home}/>
+              <Route path="/character/" component={Character}/>
+              <Route path='/search/' component={Search}/>
+              <Route path="/about/" component={About}/> 
             </div>
       </div>
-    </Router>
+    </HashRouter>
 		);
 	}
 }
