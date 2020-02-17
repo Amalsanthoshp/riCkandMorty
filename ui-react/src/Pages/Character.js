@@ -64,7 +64,7 @@ class Character extends React.Component {
       <i className="circular users icon"></i>
       Characters
     </h2> 
-    <div className='ui vertical raised  row' style={{display:'right',marginTop:'0rem'}}>
+    <div className='ui vertical raised row' style={{display:'flex',marginTop:'0rem'}}>
     {cards} 
     </div>
     </>)
