@@ -63,6 +63,7 @@ class Search extends React.Component {
      status= {this.state.character.status}
      species={this.state.character.species}
      origin={this.state.character.origin}
+     noflex='true'
       />
     :'No results for you try to search with numbers...'
 
@@ -80,7 +81,7 @@ class Search extends React.Component {
 		      <button className="ui button" type="button" onClick={this.handleClick}>Submit</button>
 		      </form>
 		      </div>
-		      <div className="column" style={{marginBottom:'2rem'}}>
+		      <div className="column" style={{marginBottom:'2rem',display:'flex',justifyContent:'center'}}>
 		      {card }
 		      </div>
 		      </div>
